@@ -20,3 +20,9 @@ jobs:
         run: |
           echo $GITHUB_REPOSITORY
           echo $GITHUB_SHA
+          echo "3. 워크플로우 실행한 놈 : $GITHUB_ACTOR"
+          echo "4. 워크플로우 실행한 브랜치 : $GITHUB_REF_NAME"
+          echo "5. 이 워크플로우 실행 번호 : $GITHUB_RUN_NUMBER"
+          echo "6. 이 워크플로우 실행 이벤트 : $GITHUB_EVENT_NAME"
+          echo "7. 현재 액션이 돌아가는 OS : $RUNNER_OS"
+          echo "8. 가상환경 기본작업 경로 : $GITHUB_WORKSPACE"
