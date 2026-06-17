@@ -31,3 +31,8 @@ jobs:
         run: |
           echo ${{secrets.MY_AGE}}
           echo ${{secrets.MY_PAY}}
+
+      - name: 남이 봐도 되는 변수
+        run: |
+            echo ${{vars.MY_GRADE}}
+            echo ${{vars.MY_HEIGHT}}
