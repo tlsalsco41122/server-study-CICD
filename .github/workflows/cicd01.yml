@@ -26,3 +26,8 @@ jobs:
           echo "6. 이 워크플로우 실행 이벤트 : $GITHUB_EVENT_NAME"
           echo "7. 현재 액션이 돌아가는 OS : $RUNNER_OS"
           echo "8. 가상환경 기본작업 경로 : $GITHUB_WORKSPACE"
+
+      - name: Secret 변수 사용하기, 남이 보면 안됨
+        run: |
+          echo ${{secrets.MY_AGE}}
+          echo ${{secrets.MY_PAY}}
