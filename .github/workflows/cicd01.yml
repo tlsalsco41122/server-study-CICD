@@ -15,7 +15,7 @@ jobs:
           with:
             host: ${{secrets.EC2_HOST}}
             username: ${{secrets.EC2_USERNAME}}
-            key: ${{secrets.EC2_EC2_PRIVATE_KEY}}
+            key: ${{secrets.EC2_PRIVATE_KEY}}
             script_stop:
             script: |
               cd /home/ubuntu/server-study-CICD
